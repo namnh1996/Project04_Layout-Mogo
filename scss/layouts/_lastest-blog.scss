@@ -1,0 +1,116 @@
+@import '../untilities/color';
+@import '../untilities/font';
+.l-latest-blog{
+    padding-top: 110px;
+    .items{
+        padding-top: 45px;
+        display: flex;
+        justify-content: space-between;
+        .item{
+            width: 32%;
+            position: relative;
+            .item__img{
+                width: 100%;
+            }
+            .item__img--mask{
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: 1s;
+            }
+            .item__img--mask:hover{
+                opacity: 1;
+            }
+
+            
+            .item__content{
+                padding: 15px 0;
+                border-bottom: 1px solid $line-grey;
+                .item__content--title{
+                    display: block;
+                    color: $text-black;
+                    text-transform: uppercase;
+                    font-family: $montserrat;
+                    font-weight: bold;
+                    font-size: 14px;
+                    padding-bottom: 15px;
+                }
+                .item__content--text{
+                    color: $text-grey;
+                    line-height: 24px;
+                }
+            }
+            .item__inner{
+                color: $text-grey;
+                display: flex;
+                align-items: center;
+                padding-top: 18px;
+                .inner__view{
+                    margin-left: 8px;
+                    margin-right: 15px;
+                }
+                .inner__comment{
+                    margin-left: 8px;
+                }
+
+            }
+            .item__calendar{
+                display: inline-block;
+                text-align: center;
+                padding: 14px;
+                background-color: #95e1d3;
+                position: absolute;
+                transform: translateY(-60%);
+                top: 50%;
+                left: -3%;
+                span{
+                    display: block;
+                }
+                .calendar__date{
+                    color: white;
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+                .calendar__month{
+                    color: $text-grey;
+                    font-style: italic;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+}
+@include SP{
+    .l-latest-blog{
+        padding-top: 50px;  
+        .l-latest-blog__content{
+            .items{
+                padding-top: 20px;
+                display: block;
+                .item{
+                    width: 100%;
+                    padding-bottom: 20px;
+                    .item__content{
+                        padding: 10px 0;
+                        border: 0;
+                        .item__content--title{
+                            font-size: 12px;
+                            padding-bottom: 5px;
+                        }
+                        .item__content--text{
+                            font-size: 12px;
+                            line-height: 15px;
+                        }
+                        
+                    }
+                    .item__inner{
+                        padding: 0;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

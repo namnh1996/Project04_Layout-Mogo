@@ -1,0 +1,16 @@
+.l-list-logos{
+    margin-bottom: 95px;
+    padding: 60px 0;
+    background-color: $background-grey;
+    .l-list-logos__content{
+        img{
+            width: 100%;
+        }
+    }
+}
+@include SP{
+    .l-list-logos{
+        margin-bottom: 40px;
+        padding: 30px 0;
+    }
+}

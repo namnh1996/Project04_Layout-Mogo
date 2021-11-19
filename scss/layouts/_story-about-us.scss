@@ -1,0 +1,45 @@
+.l-story-about-us{
+    padding: 90px 0 105px 0;
+    text-align: center;
+    .l-story-about-us__content{
+        .list-imgs{
+            display: flex;
+            justify-content: space-between;
+            .list-imgs__img{
+                width: 32%;
+                img{
+                    width: 100%;
+                }
+                position: relative;
+            }
+            .wwd-hover1{
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: 1s;
+            }
+           
+            .list-imgs__img:hover{
+                .wwd-hover1{
+                    opacity: 1;
+                    top: -10px;
+                    left: -10px;
+                    -webkit-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+                    -moz-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+                    box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+                }
+                .wwd-hover2{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+//SP-------Responsive
+@include SP{
+    .l-story-about-us{
+        padding: 45px 0 50px 0;
+    }
+}

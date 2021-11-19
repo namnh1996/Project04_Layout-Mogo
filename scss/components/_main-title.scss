@@ -1,0 +1,42 @@
+@import '../untilities/color';
+@import '../untilities/font';
+.main-title{
+    text-align: center;
+    .main-title1{
+        font-size: 24px;
+        color:$text-black;
+        font-family: 'Kaushan Script';
+        padding-bottom: 25px;
+    }
+    .main-title2{
+        color: $text-black;
+        font-size: 30px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        padding-bottom: 40px;
+        text-transform: uppercase;
+    }
+    .red-line{
+        width: 60px;
+        height: 3px;
+        background-color: crimson;
+        margin: 0 auto;
+        display: block;
+    }
+}
+@include SP{
+    .main-title{
+        .main-title1{
+            font-size: 15px;
+            padding-bottom: 15px;
+        }
+        .main-title2{
+            font-size: 18px;
+            padding-bottom: 20px;
+        }
+        .red-line{
+            width: 30px;
+            height: 2px;
+        }
+    }
+}

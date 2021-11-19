@@ -1,0 +1,188 @@
+.l-what-we-do {
+  .what-we-do-content__bottom {
+    display: flex;
+    justify-content: space-between;
+   
+    .bottom__left {
+      width: 48%;
+      img {
+        width: 100%;
+      }
+    }
+    .bottom__right {
+      width: 48%;
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        height: 100%;
+        transition: 2s;
+        .item{
+          margin-bottom: 2px;
+          .title__text{
+            overflow: hidden;
+            // height: 20%;
+          }
+        }
+
+        .title--hover{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .btn-wwd{
+            margin: 0 10px;
+            cursor: pointer;
+            transform: rotate(180deg);
+          }
+          .btn-wwd.active{
+            transform: none;
+          }
+        }
+        .title--hover:hover{
+          background-color: rgb(243, 236, 236);
+        }
+        .item__title {
+          text-transform: uppercase;
+          font-size: 14px;
+          font-weight: bold;
+          padding-left: 15px;
+        }
+      }
+      .bottom-right__photography {
+        border: 1px solid #eeeeee;
+        .photography-top {
+          padding: 15px 0 15px 15px;
+          border-bottom: 1px solid #eeeeee;
+        }
+        .photography__text {
+          padding: 15px 0 5px 15px;
+          color: $text-grey;
+          display: none;
+          width: 95%;
+          text-align: justify;
+        }
+        .photography__text.active{
+          display: block;
+        }
+      }
+      .bottom-right__creativity {
+        border: 1px solid #eeeeee;
+        .creativity-top {
+          padding: 15px 0 15px 15px;
+          border-bottom: 1px solid #eeeeee;
+        }
+        .creativity__text {
+          padding: 15px 0 5px 15px;
+          color: $text-grey;
+          display: none;
+          width: 95%;
+          text-align: justify;
+        }
+        .creativity__text.active{
+          display: block;
+        }
+        
+      }
+      .bottom-right__web-design{
+        border: 1px solid #eeeeee;
+        .web-design-top {
+          padding: 15px 0 15px 15px;
+          border-bottom: 1px solid #eeeeee;
+        }
+        .web-design__text {
+          padding: 15px 0 5px 15px;
+          color: $text-grey;
+          display: none;
+          width: 95%;
+          text-align: justify;
+        }
+        .web-design__text.active{
+          display: block;
+        }
+        
+      }
+    }
+  }
+}
+@include SP{
+  .l-what-we-do {
+    .what-we-do-content__bottom {
+      display: block;
+      justify-content: space-between;
+      .bottom__left {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .bottom__right {
+        width: 100%;
+  
+        .items {
+          display: flex;
+          flex-direction: column;
+          // justify-content: space-between;
+          transition: 2s;
+          // .item:hover{
+          //   background-color: rgb(243, 236, 236);
+          // }
+          .item__title {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: bold;
+            padding-left: 10px;
+          }
+
+        }
+        .bottom-right__photography {
+          margin-bottom: 5px;
+          border: 1px solid #eeeeee;
+          .photography-top {
+            padding: 5px 0 5px 5px;
+            border-bottom: 1px solid #eeeeee;
+          }
+          .photography__text {
+            padding: 15px;
+            color: $text-grey;
+            font-size: 9px;
+            text-align: justify;
+            width: 100%;
+          }
+        }
+        .bottom-right__creativity {
+          margin-bottom: 5px;
+  
+          border: 1px solid #eeeeee;
+          .creativity-top {
+            padding: 5px 0 5px 5px;
+            border-bottom: 1px solid #eeeeee;
+          }
+          .creativity__text {
+            padding: 15px;
+            color: $text-grey;
+            font-size: 9px;
+            text-align: justify;
+            width: 100%;
+          }
+        }
+        .bottom-right__web-design{
+          margin-bottom: 5px;
+    
+          border: 1px solid #eeeeee;
+          .web-design-top {
+            padding: 5px 0 5px 5px;
+            border-bottom: 1px solid #eeeeee;
+          }
+          .web-design__text {
+            padding: 15px;
+            color: $text-grey;
+            font-size: 9px;
+            text-align: justify;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.l-list-numbers{
+    background-color: #95e1d3;
+    .l-list-numbers__content{
+        display: flex;
+        &.l-list-numbers__content:nth-child(1){
+            border-left: 1px solid #b5eae0;
+        }
+        .item__content{
+            width: 20%;
+            text-align: center;
+            padding: 80px 0;
+            border-right: 1px solid #b5eae0;
+            
+            .item__content--number{
+                color: white;
+                font-weight: bold;
+                font-size: 72px;
+            }
+            .item__content--text{
+                color: white;
+                font-weight: bold;
+                font-size: 14px;
+                text-transform: uppercase;
+                padding-top: 25px;
+                font-family: 'Montserrat';
+            }
+        }
+    }
+}
+@include SP{
+    .l-list-numbers{
+        .l-list-numbers__content{
+            display: flex;
+            &.l-list-numbers__content:nth-child(1){
+                border-left: 1px solid #b5eae0;
+            }
+            .item__content{
+                padding: 15px 0;
+                border-right: 1px solid #b5eae0;
+                .item__content--number{
+                    font-size: 31px;
+                }
+                .item__content--text{
+                    font-size: 7px;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+}

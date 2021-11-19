@@ -1,0 +1,73 @@
+@import '../untilities/color';
+@import '../untilities/font';
+.l-meet-our-team{
+    .l-meet-our-team__content
+    {
+        .list-imgs{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 120px;
+            
+            .list-img__people{
+                width: 32%;
+                img{
+                    width: 100%;
+                }
+                text-align: center;
+                position: relative;
+                .meet-our-team__img--hover{
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    transition: 1s;
+                }
+                .meet-our-team__img--hover:hover{
+                    opacity: 0.9;
+                    top: -10px;
+                    left: -10px;
+                    -webkit-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+                    -moz-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+                    box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+                }
+                .people__content{
+                    padding-top: 30px;
+                    .people__content--name{
+                        display: block;
+                        padding-bottom: 15px;
+                        color: $text-black;
+                        font-family: $montserrat;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                    .people__content--job{
+                        color: $text-grey;
+                        font-style: italic;
+                    }
+                }
+            }
+        }  
+    }
+}
+@include SP{
+    .l-meet-our-team{
+        .l-meet-our-team__content{
+            .list-imgs{
+                padding-bottom: 50px;
+                .list-img__people{
+                    .people__content{
+                        padding-top: 10px;
+                        .people__content--name{
+                            padding-bottom: 5px;
+                            font-size: 10px;
+                        }
+                        .people__content--job{
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }  
+        }
+    }
+}

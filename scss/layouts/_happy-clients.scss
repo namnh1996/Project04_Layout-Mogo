@@ -1,0 +1,88 @@
+@import '../untilities/color';
+@import '../untilities/font';
+.l-happy-clients {
+    background-image: url(../img/happy-clients-bg.png);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center center;
+    .l-happy-clients__content{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 90px;
+        padding-bottom: 110px;
+        .list-peoples{
+            padding-top: 85px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .people{
+                img{
+                    width: 30%;
+                }
+                height: 150%;
+                width: 45%;
+                display: flex;
+                align-items: flex-start;
+                .people__detail{
+                    padding-left: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        display: block;
+                        margin-bottom: 15px;
+                    }
+                    .people__detail--name{
+                        color: $text-black;
+                        font-size: 14px;
+                        font-family: $montserrat;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                    .people__detail--job{
+                        color: $text-grey;
+                        font-style: italic;;
+                    }
+                    .people__detail--red-line{
+                        width: 60px;
+                        height: 3px;
+                        background-color: crimson;
+                    }
+                    .people__detail--about{
+                        color: $text-grey;
+                        font-size: 15px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+@include SP{
+    .l-happy-clients{
+        padding-bottom: 0;
+        .l-happy-clients__content{
+            padding: 50px 0 30px 0;
+            .list-peoples{
+                padding-top: 20px;
+                .people{
+                    width: 100%;
+                    .people__detail{
+                        padding: 10px;
+                        .people__detail--name{
+                            font-size: 12px;
+                        }
+                        .people__detail--job{
+                            font-size: 10px;
+                        }
+                        .people__detail--about{
+                            text-align: justify;
+                            font-size: 12px;
+                            line-height: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
